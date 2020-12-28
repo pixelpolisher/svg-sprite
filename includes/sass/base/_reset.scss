@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #FFF;
+	color: $c-txt;
+	font: 100%/#{$f-line-height} normal;
+	font-family: $f-default;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+main {
+	display: block;
+}
+
+a {
+	outline: none;
+	color: $c-link;
+	transition: $a-duration;
+	cursor: pointer;
+
+  &:hover,
+	&:focus {
+		color: $c-link-hover;
+	}
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="includes/build/css/style.css" media="screen" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+	<title>Gulp svg sprite</title>
+</head>
+<body>
+	<div class="page">
+		<header class="header page__header">
+		</header>
+
+		<main class="main page__main">
+			<h1>Gulp svg sprite</h1>
+			<ol class="list">
+				<li class="list__item">npm install</li>
+				<li class="list__item">gulp watch</li>
+				<li class="list__item">add or remove svg files from the two folders in includes/img/ to recompile</li>
+			</ol>
+
+			<hr />
+
+			<h2>Inline sprite</h2>
+			<p>
+				Inline svg tag, works in all browsers but does require a polyfill for IE. This is the task called sprite. You do need to run this html file on a server to see the svg icons.
+			</p>
+			<ul class="list list--unordered">
+				<li class="list__item">
+					<a class="list__link" href="includes/build/img/sprite.symbol.html">avatar
+						<svg class="icon list__icon"><use class="icon__symbol" xlink:href="includes/build/img/icons.svg#avatar"></use></svg>
+					</a>
+				</li>
+				<li class="list__item">
+					<a class="list__link" href="includes/build/img/sprite.symbol.html">calendar
+						<svg class="icon list__icon"><use class="icon__symbol" xlink:href="includes/build/img/icons.svg#calendar"></use></svg>
+					</a>
+				</li>
+				<li class="list__item">
+					<a class="list__link" href="includes/build/img/sprite.symbol.html">chat
+						<svg class="icon list__icon"><use class="icon__symbol" xlink:href="includes/build/img/icons.svg#chat"></use></svg>
+					</a>
+				</li>
+				<li class="list__item">
+					<a class="list__link" href="includes/build/img/sprite.symbol.html">magnify
+						<svg class="icon list__icon"><use class="icon__symbol" xlink:href="includes/build/img/icons.svg#magnify"></use></svg>
+					</a>
+				</li>
+				<li class="list__item">
+					<a class="list__link" href="includes/build/img/sprite.symbol.html">newspaper
+						<svg class="icon list__icon"><use class="icon__symbol" xlink:href="includes/build/img/icons.svg#newspaper"></use></svg>
+					</a>
+				</li>
+				<li class="list__item">
+					<a class="list__link" href="includes/build/img/sprite.symbol.html">twitter
+						<svg class="icon list__icon"><use class="icon__symbol" xlink:href="includes/build/img/icons.svg#twitter"></use></svg>
+					</a>
+				</li>
+			</ul>
+
+			<hr />
+
+			<h2>Background image</h2>
+			<p>
+				Svg sprite that can be used as background image. As with icomoon, the icon is rendered via a scss mixin and css compilation fails when the icon is missing but is referenced via the mixin. This is the task called bgImg.
+			</p>
+			<ul class="list list--unordered">
+				<li class="list__item">
+					<span class="flag flag--ae"></span> United Arab Emirates
+				</li>
+				<li class="list__item">
+					<span class="flag flag--be"></span> Belgium
+				</li>
+				<li class="list__item">
+					<span class="flag flag--br"></span> Brazil
+				</li>
+				<li class="list__item">
+					<span class="flag flag--de"></span> Germany
+				</li>
+				<li class="list__item">
+					<span class="flag flag--fr"></span> France
+				</li>
+				<li class="list__item">
+					<span class="flag flag--nl"></span> Netherlands
+				</li>
+				<li class="list__item">
+					<span class="flag flag--uk"></span> United Kingdom
+				</li>
+			</ul>
+
+			<hr />
+
+			<p>Please note this is a basic setup, the gulp sprite tasks do not contain error handling.</p>
+		</main>
+
+		<footer class="footer page__footer">
+		</footer>
+	</div>
+</body>
+</html>

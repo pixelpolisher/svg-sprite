@@ -1,0 +1,32 @@
+// colors
+$c-txt:           #000;
+$c-link:          #00F;
+$c-link-hover:    #F00;
+$c-blusher:       #eee8e8;
+$c-primary:       #f9423a;
+
+// fonts
+$f-line-height:   1.5;
+$f-default:       Arial, sans-serif;
+$f-emphasis:      Georgia, serif;
+
+// transitions & animations
+$a-s-curve:         cubic-bezier(0.770, 0.000, 0.175, 1.000);
+$a-duration:        0.25s;
+
+// media queries
+$mq-xxs:            0px;
+$mq-xs:             420px;
+$mq-sm:             660px;
+$mq-md:             880px;
+$mq-lg:             1100px;
+$mq-xl:             1300px;
+
+$breakpoints: (
+  xxs: $mq-xxs,
+  xs: $mq-xs,
+  sm: $mq-sm,
+  md: $mq-md,
+  lg: $mq-lg,
+  xl: $mq-xl
+);

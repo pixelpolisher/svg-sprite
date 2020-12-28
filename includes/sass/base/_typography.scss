@@ -1,0 +1,30 @@
+body {
+	font: 90%/#{$f-line-height} normal;
+	font-family: $f-default;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@include breakpoint-up(sm) {
+		font-size: 105%;
+	}
+
+	@include breakpoint-up(lg) {
+		font-size: 120%;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	font-family: $f-emphasis;
+	margin-bottom: 0.3em;
+	font-weight: bold;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.0em; }
+h6 { font-size: 0.9em; }
+
+p { margin-bottom: 0.4em; }

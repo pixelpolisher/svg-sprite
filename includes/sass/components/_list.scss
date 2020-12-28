@@ -1,0 +1,25 @@
+.list {
+
+  list-style-position: inside;
+
+  &--unordered {
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 7px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+}
